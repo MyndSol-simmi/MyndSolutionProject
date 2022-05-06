@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Create a Form Dynamically
+        with the JavaScript
+    </title>
+    <link rel="stylesheet" href="input.css">
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="TextBox.js"></script>
+    <script type="text/javascript" src="Label.js"></script>
+    <script type="text/javascript" src="CheckBox.js"></script>
+    <script type="text/javascript" src="Radio.js"></script>
+    <script type="text/javascript" src="DropDown.js"></script>
+    <script type="text/javascript" src="input.css"></script>
+    <script type="text/javascript">
+
+
+        var dynamicForm = {
+            initialize: function () {
+                mainControl.load();
+            }
+        }
+
+        dynamicForm.initialize();
+    </script>
+</head>
+<body style="text-align: center;" onload()="createTextDiv()">
+    <h1 style="color: blue;">
+    </h1>
+    <p>
+        create a form dynamically
+    </p>
+    <div id="wrapper1"></div>
+    <!--<button onClick="createTextDiv()">
+        Add TextBox
+    </button>-->
+    <div id="Dropcontainer"></div>
+    <button onClick="createDropDiv()">
+        Add CheckBox
+    </button>
+    <input type="file" id="myFile" name="filename">
+    <input type="submit">
+
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" href="inputstyle.css">
+	<script type="text/javascript" src="request1.json"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="websitelanding.js"></script>
+	<script type="text/javascript" src="table.js"></script>
+	<script type="text/javascript" src="TextBox.js"></script>
+	<script type="text/javascript" src="CheckBox.js"></script>
+	<script type="text/javascript" src="DropDown.js"></script>
+	<script type="text/javascript" src="Validation.js"></script>
+	<script type="text/javascript" src="Radio.js"></script>
+	<script type="text/javascript" src="response.js"></script>
+	<script type="text/javascript" src="Model.js"></script>
+	<script type="text/javascript" src="FileUpload.js"></script>
+
+</head>
+<body onload="load()">
+	<form action="file:///D:/PearlProj/DynamicForm/submit.html" name="myForm" onsubmit="return(response());">
+		<div id="data">
+
+		</div>
+		<div id="FormDiv">
+
+			<div id="dvTable">
+			</div>
+			<button type="submit" class="Form1">submit</button>
+		</div>
+	</form>
+
+	<!--<button onClick="GenerateTable()">
+		Add Table
+	</button>-->
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Create a Form Dynamically
+		with the JavaScript
+	</title>
+</head>
+<body style="text-align: center;">
+	<h1 style="color: blue;">
+	</h1>
+	<p>
+		Click on the button to create
+		a form dynamically
+	</p>
+	<table>
+	<tr>
+		<td onload="Fun2(response.Id)"></td>
+		<td><input type="text" id="name"></td>
+	</tr>
+
+	</table>
+	<button onClick="Fun2()">
+		Add label
+	</button>-->
+<!--//Add input-->
+<!--<button onClick="Fun1()">
+		Add input
+	</button>
+
+	<button onClick="Fun()">
+		Add Page
+	</button>
+	<button onClick="Fun3()">
+		Add Submit
+	</button>
+	<p id="DOWN"></p>
+	<script>
+		//Request object
+
+		var response = new Object();
+		response.Id = "Login";
+		response.DisplayName = "Login";
+		response.jsControlType = "TextBox";
+		response.DisplayOrder = 2;
+		response.IsRequired = true;
+		response.ValidationType = "Alphabhet"
+		Fun2(response.Id);
+		Fun1(response.jsControlType);
+
+		function Fun() {
+			var opened = window.open("");
+			opened.document.write(Fun1());
+
+		}
+		var down = document.getElementById("DOWN");
+		function Fun2(Id) {
+			// Create a form dynamically
+			var form = document.createElement("form");
+			form.setAttribute("method", "post");
+			form.setAttribute("action", "submit");
+
+			var p2 = document.createElement('p');
+			p2.innerHTML = Id;
+
+			form.append(p2);
+
+			document.getElementsByTagName("body")[0]
+				.appendChild(form);
+		}
+		function Fun1() {
+
+			// Create a form dynamically
+			var form = document.createElement("form");
+			form.setAttribute("method", "post");
+			form.setAttribute("action", "submit");
+
+			// Create an input element for LoginID
+			var ID = document.createElement("input");
+			ID.setAttribute("type", "text");
+			ID.setAttribute("name", "LoginID");
+			ID.setAttribute("placeholder", "Login ID");
+
+
+			// Append the ID input to the form
+			form.append(ID);
+
+			document.getElementsByTagName("body")[0]
+				.appendChild(form);
+		}
+		function Fun3() {
+
+			// Create a form dynamically
+			var form = document.createElement("form");
+			form.setAttribute("method", "post");
+			form.setAttribute("action", "submit");
+
+
+
+			// Create a submit button
+			var s = document.createElement("input");
+			s.setAttribute("type", "submit");
+			s.setAttribute("value", "Submit");
+
+
+
+			// Append the button to the form
+			form.append(s);
+
+			document.getElementsByTagName("body")[0]
+				.appendChild(form);
+		}
+
+	</script>
+</body>
+</html>-->

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Create a Form Dynamically
+        with the JavaScript
+    </title>
+    <script type="text/javascript" src="lookup.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript">
+
+
+        var dynamicForm = {
+            initialize: function () {
+                mainControl.load();
+            }
+        }
+
+        dynamicForm.initialize();
+    </script>
+</head>
+<body style="text-align: center;" onload()="createTextDiv()">
+    <h1 style="color: blue;">
+    </h1>
+    <p>
+        create a form dynamically
+    </p>
+    <div id="wrapper1"></div>
+    <!--<button onClick="createTextDiv()">
+        Add TextBox
+    </button>-->
+    <div id="Dropcontainer"></div>
+    <button onClick="createlookup()">
+        Add CheckBox
+    </button>
+
+</body>
+</html>
